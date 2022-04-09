@@ -21,6 +21,9 @@ body {
     text-align: center;
     line-height: 1.5rem;
     min-height: 100vh;
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;    
 }    
 
 main {
@@ -113,6 +116,9 @@ p.star {
     body {
         display: flex;
         place-items: center;
+        background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
     }
     main {
         max-width: 1200px;
@@ -152,6 +158,8 @@ p.star {
     div.star {
         display: flex;
         flex-direction: row;
+        gap: 2rem;
+        padding-right: 3rem;
     }
     div.star:nth-of-type(1) {
         position: relative;
@@ -165,17 +173,14 @@ p.star {
         display: flex;
         flex-wrap: nowrap;
         flex-shrink: 1;
-                dflex-direction: row;
-        dflex-shrink: 1;
     }
     img.star {
-        ddisplay: inline;
-        border: 1px solid red;
         height: auto;
-        sflex-shrink: 1;
-        dfloat: left;
-        swidth: auto;
-        dflex-grow: 1;
+        width: auto;
+        object-fit: contain;
+    }
+    .star p {
+        margin: 0;
     }
 
     .reviews {
